@@ -1,12 +1,17 @@
 #pragma once
 #include "Vehicle.h"
-class Truck :
-	public Vehicle
+
+class Truck : public Vehicle
 {
+protected:
+	double basePrice = 20000;
+
 public:
 	Truck();
 	~Truck();
-	string bodyOptionsSelection();
-	void setBodyType(bodyOptionsSelection());
+	void displayBodyOptions();
+	void displaySuspensionOptions();
+	void displayEngineOptions();
+	void displayTireOptions();
 };
 
